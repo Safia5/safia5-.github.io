@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr"> 
+    <head> 
+        <meta charset="utf-8">
+        <title> Formulaire d'inscription </title>
+    </head>
+    <form action="traitement.php" method="post">
+    <label for="Nom">Nom: </label>
+        <input type="text" name="Nom" id="Nom" required>
+    <label for="Prénom">Prénom: </label>
+        <input type="text" name="Prénom" id="Prénom" required><br>
+    <label for="Age">Age: </label>
+        <input type="number" name="Age" id="Age" required>
+    <label for="Date">Date de naissance: </label>
+        <input type="date" name="Brithday" id="Date" required> <br>
+    <label for="Sexe">Genre: </label>
+        <input type="radio" name="sexe" value="Homme" id="Sexe" required checked> Homme 
+        <input type="radio" name="sexe" value="Femme" required checked> Femme 
+        <input type="radio" name="sexe" value="Autre" required checked> Autre <br>
+    <label for="email"> Mail: </label>
+        <input type="email" name="email.adress" id="email" required placeholder="namejpjp@donaim.com"> <br>
+    <label for="Adresse">Adresse postale: </label>
+         <input type="text" name=" Adresse postale" id="Adresse" required>
+    <label for="Ville"> Ville: </label>
+         <input type="text" name="Ville" id="Ville" size="06" required>
+    <label for="Code">Code postale: </label> 
+        <input type="text" name="Code postale" id="Code" pattern="[0-9]{5}" size="01" required maxlength="5"> <br>
+    <label for="Métier"> Métier exercé: </label>
+        <input type="text" name="Métier exercé" id="Métier" required maxlength="20"> <br>
+    <label for="Nationalité"> Nationalité: </label>
+        <select name="Nationalité" id="Nationalité" required>
+        <option value=""> Selectionner</option>
+        <option value="France"> Française</option>
+        <option value="Espagne">Espagnol</option>
+        <option value="Italie">Italienne</option>
+        <option value="Canada"> Canadienne</option>
+        </select>
+    <label for="Autre"> Autre: </label>    
+        <input type="text" name="Autre" id="Autre"> <br>
+    <label for="Pays"> Pays de naissance: </label>
+        <input type="text" name="Pays" id="Pays" required> <br>
+    <label for="Securité"> Numéro sécurité social: </label> 
+        <input type="tel" name="tel1" pattern="[0-9]{1}" maxlength="1" id="Securité" size="01" required>
+        <input type="tel" name="tel2" pattern="[0-9]{2}" maxlength="2" size="01" required>
+        <input type="tel" name="tel3" pattern="[0-9]{2}" maxlength="2" size="01" required>
+        <input type="tel" name="tel4" pattern="[0-9]{2}" maxlength="2" size="01" required>
+        <input type="tel" name="tel5" pattern="[0-9]{3}" maxlength="3" size="01" required>
+        <input type="tel" name="tel6" pattern="[0-9]{3}" maxlength="3" size="01" required>
+        <input type="tel" name="tel7" pattern="[0-9]{3}" maxlength="2" size="01" required>  <br>
+    <label for="passeport">Numéro du passeport: </label>
+        <input type="text" name="Numéro passport" id="passeport" required> <br>
+    <label for="délivrance"> Délivrance du passeport: </label>
+        <input type="date" name="date de délivrance" id="délivrance" required>
+    <label for="validité">Validité du passeport: </label>
+        <input type="date" name="date validité" id="validité" required ><br>
+    <label for="Envoyer"></label> 
+        <input type="submit" value="Envoyer" id="Envoyer">
+    </form>
+</html>
